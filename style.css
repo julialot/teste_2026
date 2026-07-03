@@ -1,10 +1,147 @@
-header{
-    background-color: #a82cf0;
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1{
-    color: #fff;
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #357abd;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Layout Principal */
+main {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.posts {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+/* Posts */
+.post {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post h2 {
+    color: #357abd;
+    margin-bottom: 5px;
+}
+
+.post .data {
+    font-size: 0.85rem;
+    color: #777;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.post p {
+    margin-bottom: 15px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.botao:hover {
+    background-color: #357abd;
+}
+
+/* Barra Lateral (Sidebar) */
+.widget {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.widget h3 {
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 5px;
+}
+
+.widget ul {
+    list-style: none;
+}
+
+.widget ul li {
+    margin: 8px 0;
+}
+
+.widget ul li a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
